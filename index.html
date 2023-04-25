@@ -5,7 +5,7 @@
     <title>Sequential Images in Pairs</title>
     <style>
         body {
-            background-color: #f2f2f2;
+            background-color: slategrey;
             /* set a background color for the entire page */
         }
 
@@ -74,26 +74,36 @@
 
         }
 
-        #erik-iframe {
+        .right-top-image {
+            position: relative;
             width: 100%;
-            height: 97%;
-            margin: 5px 0;
-            margin-left: +10px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 2px 2px 5px #ccc;
-
         }
 
-        #my-iframe {
-            background-color: turquoise;
-            width: 100%;
-            height: 97%;
-            margin: 5px 0;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 2px 2px 5px #ccc;
+        .bottom-video {
+            position: absolute;
+            top: 230px;
+            left: 90px;
+            width: 520px;
+            height: 220px;
+            z-index: 1;
+        }
 
+        .bottom-video-2 {
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            width: 510px;
+            height: 260px;
+            z-index: 1;
+        }
+
+        .bottom-video-3 {
+            position: absolute;
+            top: 120px;
+            left: 100px;
+            width: 550px;
+            height: 300px;
+            z-index: 1;
         }
     </style>
 </head>
@@ -106,8 +116,13 @@
     </div>
     <div class="container">
         <div class="left"><img src="image/Bed.png"></div>
-        <div class="right"><iframe id="erik-iframe" src="https://player.vimeo.com/video/820594891" frameborder="0"
-                allowfullscreen></iframe></div>
+        <div class="right">
+            <div class="right-top-image">
+                <img src="image/VideoNextBedNew.png">
+                <iframe class="bottom-video" src="https://player.vimeo.com/video/820594891" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="left"><img src="image/Desk.png"></div>
@@ -115,22 +130,31 @@
     </div>
     <div class="container">
         <div class="left"><img src="image/Monster.png"></div>
-        <div class="right"><img src="image/3Monsters.png"></div>
+        <div class="right"><img src="image/Monster3.png"></div>
     </div>
     <div class="container">
         <div class="left"><img src="image/Lenards.png"></div>
         <div class="right"><img src="image/Gammal.png"></div>
     </div>
     <div class="container">
-        <div class="left"><img src="image/BuildingFront.png"></div>
-        <div class="right"><iframe id="erik-iframe" src="https://player.vimeo.com/video/820560401" width="80%"
-                height="70%" frameborder="0" allowfullscreen></iframe></div>
+        <div class="left"><img src="image/Buildings.png"></div>
+        <div class="right">
+            <div class="right-top-image">
+                <img src="image/BuildingsVideoNew.png">
+                <iframe class="bottom-video-2" src="https://player.vimeo.com/video/820560401" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="left"><img src="image/Chair.png"></div>
-        <div class="right"><iframe id="my-iframe" src="https://player.vimeo.com/video/820552769" width="80%"
-                height="70%" frameborder="0" allowfullscreen></iframe></div>
-
+        <div class="right">
+            <div class="right-top-image">
+                <img src="image/ChairVideo.png">
+                <iframe class="bottom-video-3" src="https://player.vimeo.com/video/820552769" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 
 
