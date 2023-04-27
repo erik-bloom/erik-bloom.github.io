@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sequential Images in Pairs</title>
+    <style>
+        body {
+            background-color: slategrey;
+            /* set a background color for the entire page */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: slategrey;
+            /* set a background color for the container */
+            padding: 10px;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            margin: 5px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #ccc;
+        }
+
+        .container .center {
+            width: 90%;
+            /* set a width for the center image */
+            display: flex;
+            justify-content: center;
+            /* center the image horizontally */
+            margin: 0 auto;
+            /* center the image vertically */
+        }
+
+        .container .left {
+            width: 50%;
+            order: 1;
+        }
+
+        .container .right {
+            width: 50%;
+            order: 2;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container img {
+                width: 100%;
+            }
+
+            .container .left,
+            .container .right,
+            .container .center {
+                order: unset;
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .container .left {
+                order: 2;
+            }
+
+            .container .right {
+                order: 3;
+            }
+
+            .container .center {
+                order: 1;
+            }
+
+
+        }
+
+        .right-top-image {
+            position: relative;
+            width: 100%;
+        }
+
+        .bottom-video {
+            position: absolute;
+            top: 230px;
+            left: 90px;
+            width: 520px;
+            height: 220px;
+            z-index: 1;
+        }
+
+        .bottom-video-2 {
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            width: 510px;
+            height: 260px;
+            z-index: 1;
+        }
+
+        .bottom-video-3 {
+            position: absolute;
+            top: 120px;
+            left: 100px;
+            width: 550px;
+            height: 300px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center"><img src="image/Intro.png"></div>
+        <div class="left"><img src="image/Umbrella.png"></div>
+        <div class="right"><img src="image/Table.png"></div>
+    </div>
+    <div class="container">
+        <div class="left"><img src="image/Bed.png"></div>
+        <div class="right">
+            <div class="right-top-image">
+                <img src="image/VideoNextBedNew.png">
+                <iframe class="bottom-video" src="https://player.vimeo.com/video/820594891" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left"><img src="image/Desk.png"></div>
+        <div class="right"><img src="image/Man.png"></div>
+    </div>
+    <div class="container">
+        <div class="left"><img src="image/Monster.png"></div>
+        <div class="right"><img src="image/Monster3.png"></div>
+    </div>
+    <div class="container">
+        <div class="left"><img src="image/Lenards.png"></div>
+        <div class="right"><img src="image/Gammal.png"></div>
+    </div>
+    <div class="container">
+        <div class="left"><img src="image/Buildings.png"></div>
+        <div class="right">
+            <div class="right-top-image">
+                <img src="image/BuildingsVideoNew.png">
+                <iframe class="bottom-video-2" src="https://player.vimeo.com/video/820560401" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left"><img src="image/Chair.png"></div>
+        <div class="right">
+            <div class="right-top-image">
+                <img src="image/ChairVideo.png">
+                <iframe class="bottom-video-3" src="https://player.vimeo.com/video/820552769" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
