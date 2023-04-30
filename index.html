@@ -5,14 +5,14 @@
     <title>TheOneAndOnly</title>
     <style>
         body {
-            background-color: slategrey;
+            background-color: #FAF9F6;
             /* set a background color for the entire page */
         }
 
         .container {
             display: flex;
             flex-wrap: wrap;
-            background-color: slategrey;
+            background-color: #FAF9F6;
             /* set a background color for the container */
             padding: 10px;
         }
@@ -22,7 +22,7 @@
             height: auto;
             margin: 5px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 0px;
             box-shadow: 2px 2px 5px #ccc;
         }
 
@@ -78,13 +78,13 @@
         .iframe-container {
             position: relative;
             width: 100%;
-            height: 97.5%;
+            height: 97.3%;
             background-image: url('image/VideoNextBedNew.png');
             background-size: cover;
             background-position: center;
             margin: 5px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 0px;
             box-shadow: 2px 2px 5px #ccc;
         }
 
@@ -94,6 +94,50 @@
             left: 20%;
             width: 60%;
             height: 60%;
+            border: none;
+        }
+
+        .iframe-container2 {
+            position: relative;
+            width: 100%;
+            height: 97.3%;
+            background-image: url('image/BuildingsVideoNew.png');
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            object-fit: cover;
+            border-radius: 0px;
+            box-shadow: 2px 2px 5px #ccc;
+        }
+
+        .iframe-container2 iframe {
+            position: relative;
+            top: 20%;
+            left: 7%;
+            width: 85%;
+            height: 80%;
+            border: none;
+        }
+
+        .iframe-container3 {
+            position: relative;
+            width: 100%;
+            height: 97.3%;
+            background-image: url('image/ChairVideo.png');
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            object-fit: cover;
+            border-radius: 0px;
+            box-shadow: 2px 2px 5px #ccc;
+        }
+
+        .iframe-container3 iframe {
+            position: relative;
+            top: 10%;
+            left: 5%;
+            width: 90%;
+            height: 85%;
             border: none;
         }
     </style>
@@ -128,12 +172,20 @@
     <div class="container">
         <div class="left"><img src="image/Buildings.png"></div>
         <div class="right">
-            <div class="iframe-container">
+            <div class="iframe-container2">
                 <iframe src="https://player.vimeo.com/video/820560401" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-
+    <div class="container">
+        <div class="left"><img src="image/Chair.png"></div>
+        <div class="right">
+            <div class="iframe-container3">
+                <iframe class="bottom-video-3" src="https://player.vimeo.com/video/820552769" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
 </body>
 
